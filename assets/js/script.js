@@ -79,4 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             return; // Hentikan jalannya program agar tidak lanjut ke bawah
         }
+        // 2. Logika Sukses (Jika semua kolom terisi dengan benar)
+        // Manipulasi DOM untuk memunculkan ucapan terima kasih dengan menyapa nama pengguna
+        alertContainer.innerHTML = `
+            <div class="alert alert-success alert-dismissible fade show rounded-3 p-3 mb-4" role="alert">
+                <h5 class="alert-heading fw-bold mb-1">🎉 Meja Berhasil Diamankan!</h5>
+                <p class="small mb-0 text-secondary">Halo <strong>${nama}</strong>, terima kasih. Kuota meja untuk area <strong>${area}</strong> pada tanggal <strong>${tanggal}</strong> telah kami tandai. Kami akan menghubungi Anda melalui WhatsApp di nomor <strong>${kontak}</strong>.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        `;
+
+        // Mengosongkan isian form kembali secara otomatis setelah sukses dikirim
+        formReservasi.reset();
+    });
 });
