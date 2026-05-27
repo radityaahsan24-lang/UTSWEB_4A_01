@@ -219,3 +219,26 @@ section {
         transform: translateY(0);
     }
 }
+
+/* --- Eco-Friendly Initiatives Section Styling --- */
+.initiatives-section {
+    background-color: var(--primary-green); /* Menggunakan warna hijau hutan */
+}
+
+.initiative-card {
+    background-color: rgba(255, 255, 255, 0.05); /* Efek boks semi transparan */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.initiative-card:hover {
+    transform: translateY(-5px); /* Efek kartu sedikit melompat naik ke atas */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--sage-green);
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
