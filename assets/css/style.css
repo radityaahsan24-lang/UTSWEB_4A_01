@@ -1,11 +1,10 @@
-/* Custom Variable untuk Warna Cafe Bale */
 :root {
-    --primary-green: #2D4A3E;    /* Hijau Rindang */
-    --sage-green: #A3B19B;       /* Hijau Sage Lembut */
-    --sage-light: #C2CFC1;       /* Hijau Sage Lebih Terang */
-    --warm-bg: #F4F1EA;          /* Krem Hangat / Cozy */
-    --dark-text: #2B2927;        /* Hitam Charcoal */
-    --accent-wood: #8B5E3C;      /* Cokelat Kayu */
+    --primary-green: #2D4A3E;    
+    --sage-green: #A3B19B;       
+    --sage-light: #C2CFC1;       
+    --warm-bg: #F4F1EA;          
+    --dark-text: #2B2927;        
+    --accent-wood: #8B5E3C;      
 }
 
 .text-sage-light { color: var(--sage-light); }
@@ -23,15 +22,13 @@ h1, h2, h3, .navbar-brand {
     font-weight: 600;
 }
 
-/* Base Utility Class untuk Section */
 section {
     padding: 80px 0;
 }
 
-/* --- Navbar Custom Styling --- */
 .custom-navbar {
-    background-color: rgba(45, 74, 62, 0.85); /* Hijau rindang dengan transparansi */
-    backdrop-filter: blur(10px); /* Efek kaca buram kekinian */
+    background-color: rgba(45, 74, 62, 0.85); 
+    backdrop-filter: blur(10px); 
     padding: 15px 0;
     transition: all 0.3s ease;
 }
@@ -53,10 +50,8 @@ section {
     color: var(--sage-light) !important;
 }
 
-/* --- Hero Section Styling --- */
 .hero-section {
-    height: 100vh; /* Memenuhi satu layar penuh */
-    /* Ganti URL gambar di bawah ini dengan foto cafe rindang pilihanmu nanti */
+    height: 100vh; 
     background: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1920') no-repeat center center/cover;
     position: relative;
 }
@@ -73,7 +68,6 @@ section {
     max-width: 600px;
 }
 
-/* --- Tombol Kustom (Custom Buttons) --- */
 .btn-custom-primary {
     background-color: var(--primary-green);
     color: #fff;
@@ -99,9 +93,8 @@ section {
     color: var(--primary-green);
 }
 
-/* --- Our Story / About Section Styling --- */
 .about-section {
-    background-color: #ffffff; /* Menggunakan warna dasar putih cerah agar kontras dengan hero section */
+    background-color: #ffffff; 
 }
 
 .text-success-dark {
@@ -115,23 +108,21 @@ section {
 .custom-about-img {
     width: 100%;
     height: 450px;
-    object-fit: cover; /* Biar gambar proporsional tidak penyet */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
-/* Efek interaktif CSS: Gambar sedikit membesar saat diarahkan kursor */
 .custom-about-img:hover {
     transform: scale(1.02);
 }
 
 .about-badge {
     min-width: 150px;
-    border-left: 4px solid var(--accent-wood); /* Garis aksen cokelat kayu di pinggir badge */
+    border-left: 4px solid var(--accent-wood); 
 }
 
-/* --- Ambiance Gallery Section Styling --- */
 .gallery-section {
-    background-color: var(--warm-bg); /* Menggunakan warna krem hangat */
+    background-color: var(--warm-bg); 
 }
 
 .bg-accent-wood {
@@ -148,13 +139,12 @@ section {
     width: 100%;
 }
 
-/* Animasi Hover & Overlay untuk Galeri */
 .gallery-img {
     transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .gallery-card:hover .gallery-img {
-    transform: scale(1.1); /* Efek foto nge-zoom halus ke dalam */
+    transform: scale(1.1); 
 }
 
 .gallery-overlay {
@@ -163,16 +153,15 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(45, 74, 62, 0.7); /* Warna hijau transparan overlay */
+    background-color: rgba(45, 74, 62, 0.7);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .gallery-card:hover .gallery-overlay {
-    opacity: 1; /* Overlay muncul saat di-hover */
+    opacity: 1; 
 }
 
-/* --- Botanical Menu Section Styling --- */
 .menu-section {
     background-color: #ffffff;
 }
@@ -186,7 +175,6 @@ section {
     background-color: rgba(45, 74, 62, 0.1);
 }
 
-/* Desain Tombol Filter */
 .btn-filter {
     background-color: transparent;
     color: var(--primary-green);
@@ -204,7 +192,6 @@ section {
     box-shadow: 0 4px 10px rgba(45, 74, 62, 0.2);
 }
 
-/* Efek Animasi Timbul untuk JavaScript Filter */
 .menu-item {
     animation: fadeInMenu 0.5s ease forwards;
 }
@@ -220,19 +207,18 @@ section {
     }
 }
 
-/* --- Eco-Friendly Initiatives Section Styling --- */
 .initiatives-section {
-    background-color: var(--primary-green); /* Menggunakan warna hijau hutan */
+    background-color: var(--primary-green); 
 }
 
 .initiative-card {
-    background-color: rgba(255, 255, 255, 0.05); /* Efek boks semi transparan */
+    background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
 }
 
 .initiative-card:hover {
-    transform: translateY(-5px); /* Efek kartu sedikit melompat naik ke atas */
+    transform: translateY(-5px);
     background-color: rgba(255, 255, 255, 0.1);
     border-color: var(--sage-green);
 }
@@ -243,9 +229,8 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* --- Testimonials Section Styling --- */
 .testimonials-section {
-    background-color: var(--warm-bg); /* Krem hangat agar kontras dengan section sebelumnya */
+    background-color: var(--warm-bg); 
 }
 
 .italic {
@@ -253,16 +238,14 @@ section {
 }
 
 .testimonials-section .card {
-    border-left: 4px solid var(--sage-green) !important; /* Garis aksen hijau sage di samping kartu testimoni */
-}
+    border-left: 4px solid var(--sage-green) !important; 
 
 .counter {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- Reservation Section Styling --- */
 .reservation-section {
-    background-color: #ffffff; /* Putih bersih agar bergantian kontras antarsection */
+    background-color: #ffffff;
 }
 
 .reservation-section .form-control, 
@@ -275,7 +258,6 @@ section {
     transition: all 0.3s ease;
 }
 
-/* Efek saat form diklik (Focus State) */
 .reservation-section .form-control:focus, 
 .reservation-section .form-select:focus {
     border-color: var(--primary-green);
@@ -283,36 +265,39 @@ section {
     box-shadow: 0 0 0 3px rgba(45, 74, 62, 0.15);
 }
 
-/* --- Footer Styling --- */
 footer {
-    background-color: #1A2421 !important; /* Warna hijau sangat gelap mendekati hitam */
+    background-color: #1A2421 !important; 
 }
+
 footer hr {
     border-color: #ffffff;
 }
 
 /* --- CSS Rules untuk Cozy Mode (Dark Theme) --- */
 body.dark-theme {
-    background-color: #1E2522 !important; /* Background utama jadi gelap */
+    background-color: #1E2522 !important;
     color: #E2E8F0 !important;
 }
 
-/* Mengubah warna section-section tertentu saat mode gelap aktif */
 body.dark-theme .about-section,
 body.dark-theme .menu-section,
 body.dark-theme .reservation-section,
+body.dark-theme .testimonials-section,
 body.dark-theme .card {
-    background-color: #242D29 !important; /* Kotak & kartu jadi abu-abu hijau gelap */
+    background-color: #242D29 !important;
     color: #E2E8F0 !important;
 }
 
+body.dark-theme h1,
 body.dark-theme h2, 
+body.dark-theme h3, 
 body.dark-theme h5, 
-body.dark-theme .text-success-dark {
-    color: var(--sage-light) !important; /* Judul tulisan berubah jadi hijau sage cerah */
+body.dark-theme .text-success-dark,
+body.dark-theme .lead {
+    color: var(--sage-light) !important;
 }
 
 /* Efek transisi halus agar perubahan warna tidak kaku */
-body, section, .card, h2, h5 {
-    transition: background-color 0.4s ease, color 0.4s ease;
+body, section, .card, h1, h2, h3, h5, p {
+    transition: background-color 0.4s ease, color 0.4s ease !important;
 }
