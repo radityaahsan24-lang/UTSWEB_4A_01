@@ -242,3 +242,20 @@ section {
     height: 70px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* --- Testimonials Section Styling --- */
+.testimonials-section {
+    background-color: var(--warm-bg); /* Krem hangat agar kontras dengan section sebelumnya */
+}
+
+.italic {
+    font-style: italic;
+}
+
+.testimonials-section .card {
+    border-left: 4px solid var(--sage-green) !important; /* Garis aksen hijau sage di samping kartu testimoni */
+}
+
+.counter {
+    font-family: 'Playfair Display', serif;
+}
