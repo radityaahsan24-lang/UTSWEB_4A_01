@@ -290,3 +290,29 @@ footer {
 footer hr {
     border-color: #ffffff;
 }
+
+/* --- CSS Rules untuk Cozy Mode (Dark Theme) --- */
+body.dark-theme {
+    background-color: #1E2522 !important; /* Background utama jadi gelap */
+    color: #E2E8F0 !important;
+}
+
+/* Mengubah warna section-section tertentu saat mode gelap aktif */
+body.dark-theme .about-section,
+body.dark-theme .menu-section,
+body.dark-theme .reservation-section,
+body.dark-theme .card {
+    background-color: #242D29 !important; /* Kotak & kartu jadi abu-abu hijau gelap */
+    color: #E2E8F0 !important;
+}
+
+body.dark-theme h2, 
+body.dark-theme h5, 
+body.dark-theme .text-success-dark {
+    color: var(--sage-light) !important; /* Judul tulisan berubah jadi hijau sage cerah */
+}
+
+/* Efek transisi halus agar perubahan warna tidak kaku */
+body, section, .card, h2, h5 {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
