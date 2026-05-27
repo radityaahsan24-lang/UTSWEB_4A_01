@@ -98,3 +98,33 @@ section {
     background-color: #fff;
     color: var(--primary-green);
 }
+
+/* --- Our Story / About Section Styling --- */
+.about-section {
+    background-color: #ffffff; /* Menggunakan warna dasar putih cerah agar kontras dengan hero section */
+}
+
+.text-success-dark {
+    color: var(--primary-green);
+}
+
+.about-img-wrapper {
+    padding: 10px;
+}
+
+.custom-about-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /* Biar gambar proporsional tidak penyet */
+    transition: transform 0.5s ease;
+}
+
+/* Efek interaktif CSS: Gambar sedikit membesar saat diarahkan kursor */
+.custom-about-img:hover {
+    transform: scale(1.02);
+}
+
+.about-badge {
+    min-width: 150px;
+    border-left: 4px solid var(--accent-wood); /* Garis aksen cokelat kayu di pinggir badge */
+}
