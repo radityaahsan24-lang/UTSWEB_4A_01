@@ -171,3 +171,35 @@ section {
 .gallery-card:hover .gallery-overlay {
     opacity: 1; /* Overlay muncul saat di-hover */
 }
+
+/* --- Botanical Menu Section Styling --- */
+.menu-section {
+    background-color: #ffffff;
+}
+
+.menu-item-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.bg-success-light {
+    background-color: rgba(45, 74, 62, 0.1);
+}
+
+/* Desain Tombol Filter */
+.btn-filter {
+    background-color: transparent;
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-filter:hover, .btn-filter.active {
+    background-color: var(--primary-green);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(45, 74, 62, 0.2);
+}
