@@ -239,6 +239,7 @@ section {
 
 .testimonials-section .card {
     border-left: 4px solid var(--sage-green) !important; 
+}
 
 .counter {
     font-family: 'Playfair Display', serif;
@@ -273,7 +274,6 @@ footer hr {
     border-color: #ffffff;
 }
 
-/* --- CSS Rules untuk Cozy Mode (Dark Theme) --- */
 body.dark-theme {
     background-color: #1E2522 !important;
     color: #E2E8F0 !important;
@@ -297,7 +297,6 @@ body.dark-theme .lead {
     color: var(--sage-light) !important;
 }
 
-/* Efek transisi halus agar perubahan warna tidak kaku */
 body, section, .card, h1, h2, h3, h5, p {
     transition: background-color 0.4s ease, color 0.4s ease !important;
 }
