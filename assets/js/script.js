@@ -26,4 +26,32 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    // === FITUR 2: COUNTER ANIMATION / ANGKA BERJALAN (MANIPULASI DOM) ===
+    const counters = document.querySelectorAll(".counter");
+    const speed = 100; // Semakin kecil nilainya, animasi angka berjalan akan semakin cepat
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            // Mengubah tipe data teks target menjadi angka murni (+)
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+
+            // Menghitung besarnya pertambahan angka per frame jalannya animasi
+            const increment = target / speed;
+
+            // Cek jika angka saat ini belum mencapai target asli
+            if (count < target) {
+                // Tambahkan angka secara bertahap dan bulatkan ke atas
+                counter.innerText = Math.ceil(count + increment);
+                // Jalankan kembali fungsi ini dalam waktu 20 milidetik (efek animasi mulus)
+                setTimeout(updateCount, 20);
+            } else {
+                // Jika sudah lewat atau sama dengan target, kunci di angka target asli
+                counter.innerText = target + (counter.getAttribute("data-target") === "98" ? "%" : "+");
+            }
+        };
+
+        updateCount();
+    });
 });
