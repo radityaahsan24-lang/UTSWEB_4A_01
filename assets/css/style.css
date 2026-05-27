@@ -2,10 +2,15 @@
 :root {
     --primary-green: #2D4A3E;    /* Hijau Rindang */
     --sage-green: #A3B19B;       /* Hijau Sage Lembut */
+    --sage-light: #C2CFC1;       /* Hijau Sage Lebih Terang */
     --warm-bg: #F4F1EA;          /* Krem Hangat / Cozy */
     --dark-text: #2B2927;        /* Hitam Charcoal */
     --accent-wood: #8B5E3C;      /* Cokelat Kayu */
 }
+
+.text-sage-light { color: var(--sage-light); }
+
+.z-index-1 { z-index: 1; }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -21,4 +26,75 @@ h1, h2, h3, .navbar-brand {
 /* Base Utility Class untuk Section */
 section {
     padding: 80px 0;
+}
+
+/* --- Navbar Custom Styling --- */
+.custom-navbar {
+    background-color: rgba(45, 74, 62, 0.85); /* Hijau rindang dengan transparansi */
+    backdrop-filter: blur(10px); /* Efek kaca buram kekinian */
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.custom-navbar .nav-link {
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin-left: 15px;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.custom-navbar .nav-link.active,
+.custom-navbar .nav-link:hover {
+    color: var(--sage-light) !important;
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    height: 100vh; /* Memenuhi satu layar penuh */
+    /* Ganti URL gambar di bawah ini dengan foto cafe rindang pilihanmu nanti */
+    background: url('https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1920') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(45, 74, 62, 0.4));
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.max-w-xl {
+    max-width: 600px;
+}
+
+/* --- Tombol Kustom (Custom Buttons) --- */
+.btn-custom-primary {
+    background-color: var(--primary-green);
+    color: #fff;
+    border: 1px solid var(--primary-green);
+    transition: all 0.3s ease;
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--accent-wood);
+    border-color: var(--accent-wood);
+    color: #fff;
+}
+
+.btn-custom-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-outline:hover {
+    background-color: #fff;
+    color: var(--primary-green);
 }
