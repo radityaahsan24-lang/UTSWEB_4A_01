@@ -128,3 +128,22 @@ section {
     min-width: 150px;
     border-left: 4px solid var(--accent-wood); /* Garis aksen cokelat kayu di pinggir badge */
 }
+
+/* --- Ambiance Gallery Section Styling --- */
+.gallery-section {
+    background-color: var(--warm-bg); /* Menggunakan warna krem hangat */
+}
+
+.bg-accent-wood {
+    background-color: var(--accent-wood);
+}
+
+.gallery-card {
+    background: transparent;
+}
+
+.gallery-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
