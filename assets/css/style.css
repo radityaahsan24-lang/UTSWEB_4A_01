@@ -1,0 +1,24 @@
+/* Custom Variable untuk Warna Cafe Bale */
+:root {
+    --primary-green: #2D4A3E;    /* Hijau Rindang */
+    --sage-green: #A3B19B;       /* Hijau Sage Lembut */
+    --warm-bg: #F4F1EA;          /* Krem Hangat / Cozy */
+    --dark-text: #2B2927;        /* Hitam Charcoal */
+    --accent-wood: #8B5E3C;      /* Cokelat Kayu */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--warm-bg);
+    color: var(--dark-text);
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Base Utility Class untuk Section */
+section {
+    padding: 80px 0;
+}
