@@ -282,3 +282,11 @@ section {
     background-color: #ffffff;
     box-shadow: 0 0 0 3px rgba(45, 74, 62, 0.15);
 }
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #1A2421 !important; /* Warna hijau sangat gelap mendekati hitam */
+}
+footer hr {
+    border-color: #ffffff;
+}
