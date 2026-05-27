@@ -92,4 +92,21 @@ document.addEventListener("DOMContentLoaded", () => {
         // Mengosongkan isian form kembali secara otomatis setelah sukses dikirim
         formReservasi.reset();
     });
+
+    // === FITUR 4: COZY MODE / DARK MODE TOGGLE (MANIPULASI DOM) ===
+    const btnCozyMode = document.getElementById("btn-cozy-mode");
+
+    btnCozyMode.addEventListener("click", () => {
+        // Melakukan toggle class 'dark-theme' pada elemen body
+        document.body.classList.toggle("dark-theme");
+
+        // Mengubah teks tombol sesuai dengan mode yang aktif
+        if (document.body.classList.contains("dark-theme")) {
+            btnCozyMode.innerText = "☀️ Bright Mode";
+            console.log("Cozy Mode Aktif: Suasana malam syahdu.");
+        } else {
+            btnCozyMode.innerText = "🌙 Cozy Mode";
+            console.log("Bright Mode Aktif: Suasana siang segar.");
+        }
+    });
 });
