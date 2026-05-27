@@ -203,3 +203,19 @@ section {
     color: #ffffff;
     box-shadow: 0 4px 10px rgba(45, 74, 62, 0.2);
 }
+
+/* Efek Animasi Timbul untuk JavaScript Filter */
+.menu-item {
+    animation: fadeInMenu 0.5s ease forwards;
+}
+
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
