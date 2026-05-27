@@ -54,4 +54,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
         updateCount();
     });
+
+    // === FITUR 3: VALIDASI FORM & CUSTOM ALERTS (MANIPULASI DOM) ===
+    const formReservasi = document.getElementById("form-reservasi");
+    const alertContainer = document.getElementById("alert-container");
+
+    formReservasi.addEventListener("submit", (e) => {
+        e.preventDefault(); // Mencegah website reload saat tombol ditekan
+        
+        // Mengambil isi nilai inputan form
+        const nama = document.getElementById("input-nama").value.trim();
+        const kontak = document.getElementById("input-kontak").value.trim();
+        const tanggal = document.getElementById("input-tanggal").value;
+        const area = document.getElementById("select-area").value;
+
+        // 1. Logika Validasi (Cek apakah ada kolom yang kosong)
+        if (nama === "" || kontak === "" || tanggal === "" || area === "") {
+            // Manipulasi DOM untuk memunculkan pesan error berwarna merah banner Bootstrap
+            alertContainer.innerHTML = `
+                <div class="alert alert-danger alert-dismissible fade show rounded-3 small" role="alert">
+                    <strong>Gagal Mereservasi!</strong> Mohon lengkapi seluruh kolom wajib sebelum mengirim.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+            return; // Hentikan jalannya program agar tidak lanjut ke bawah
+        }
 });
