@@ -259,3 +259,26 @@ section {
 .counter {
     font-family: 'Playfair Display', serif;
 }
+
+/* --- Reservation Section Styling --- */
+.reservation-section {
+    background-color: #ffffff; /* Putih bersih agar bergantian kontras antarsection */
+}
+
+.reservation-section .form-control, 
+.reservation-section .form-select {
+    padding: 12px 15px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    background-color: #F8FAFC;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Efek saat form diklik (Focus State) */
+.reservation-section .form-control:focus, 
+.reservation-section .form-select:focus {
+    border-color: var(--primary-green);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(45, 74, 62, 0.15);
+}
